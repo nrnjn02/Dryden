@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #4caf50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #4caf50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+    background: #45a049;
+}
