@@ -3,97 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <title>DRYDEN</title>
+    <link rel="stylesheet" href="view.css">
+    <title>Dryden Watches</title>
     <style>
-        /* Common styles for both desktop and mobile */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
+        /* Your existing CSS styles */
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Additional CSS enhancements for mobile */
 
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2em;
-            font-weight: bold;
-            color: #fff;
-        }
+        /* Adjustments for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack products vertically on smaller screens */
+            }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-            transition: color 0.3s;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold; 
-        }
-
-        nav ul li a:hover {
-            text-decoration: none; 
-            color: #ffcc00; 
-        }
-
-        .products-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .product {
-            width: 300px;
-            margin: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .product img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #fff;
-        }
-
-        .product-content {
-            padding: 20px;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1em;
-            margin: 0;
-        }
-
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            .content {
+                width: 90%; /* Adjust the width to fit nicely in smaller screens */
+            }
         }
     </style>
 </head>
@@ -103,34 +28,66 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="view.html">Our Models</a></li> 
             </ul>
         </nav>
     </header>
 
-    <div class="products-container">
-        <div class="product">
-            <img src="blackwatchbg.jpg" alt="Description of the first image">
-            <div class="product-content">
-                <h2>Product 1</h2>
-                <p>Description of Product 1</p>
+    <section class="body">
+        <div class="container">
+            <div class="content">
+                <!-- Slot for Image 1 -->
+                <img src="dryden1.png" alt="Watch Image 1">
+                <h2>Dryden Classic</h2>
+                <h3>22.5 mm H</h3>
+                <p>The Dryden Classic is an iconic watch model known for its timeless design and precision craftsmanship.</p>
+                <div class="buttons">
+                    <button>+ Add to Cart</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- Slot for Image 2 -->
+                <img src="dryden5.png" alt="Watch Image 2">
+                <h2>Dryden Explorer</h2>
+                <h3>21.8 mm H</h3>
+                <p>The Dryden Explorer is built for adventure, with a durable design that can withstand any exploration.</p>
+                <div class="buttons">
+                    <button>+ Add to Cart</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- Slot for Image 3 -->
+                <img src="dryden3.png" alt="Watch Image 3">
+                <h2>Dryden Elegance</h2>
+                <h3>23.0 mm H</h3>
+                <p>The Dryden Elegance combines sophistication and style, making it a perfect accessory for formal occasions.</p>
+                <div class="buttons">
+                    <button>+ Add to Cart</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- Slot for Image 4 -->
+                <img src="dryden6.png" alt="Watch Image 4">
+                <h2>Dryden Sport</h2>
+                <h3>20.5 mm H</h3>
+                <p>The Dryden Sport is designed for active individuals, featuring a sporty look and robust performance.</p>
+                <div class="buttons">
+                    <button>+ Add to Cart</button>
+                    <button>Clear</button>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="product">
-            <img src="blackwatchbg1.jpg" alt="Description of the second image">
-            <div class="product-content">
-                <h2>Product 2</h2>
-                <p>Description of Product 2</p>
-            </div>
-        </div>
-
-        <!-- Add more product entries here -->
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2023 DRYDEN Watches. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2023 Dryden Watches. All rights reserved.</p>
     </footer>
 </body>
 </html>
