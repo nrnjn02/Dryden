@@ -12,13 +12,27 @@
 
         /* Adjustments for smaller screens */
         @media only screen and (max-width: 768px) {
+            body {
+                font-size: 16px; /* Increase font size for better readability */
+            }
+
             .container {
                 flex-direction: column; /* Stack products vertically on smaller screens */
             }
 
             .content {
                 width: 90%; /* Adjust the width to fit nicely in smaller screens */
-                margin-bottom: 20px; /* Add some margin between products */
+                margin: 10px auto; /* Center-align and add margin between products */
+                padding: 10px; /* Reduce padding for better space utilization */
+            }
+
+            .content img {
+                width: 100%; /* Make images fill the container width */
+                max-width: none; /* Remove max-width constraint */
+            }
+
+            .buttons {
+                flex-direction: column; /* Stack buttons vertically on smaller screens */
             }
         }
     </style>
